@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+
+    <div class="calculator-container">
+        <div class="calculator-content">
+            <span class="show-label result"></span>
+            <span class="show-label temp"></span>
+            <span class="show-label operator"></span>
+            <span class="show-window"></span>
+            <div class="calculator-buttons">
+                <button class="btn AC" onclick="AC()">AC</button>
+                <button class="btn C" onclick="C()">C</button>
+                <button class="btn" value="9"
+                    onclick="document.querySelector('.show-window').innerHTML+= this.value">9</button>
+                <button class="btn" value="8"
+                    onclick="document.querySelector('.show-window').innerHTML+= this.value">8</button>
+                <button class="btn" value="7"
+                    onclick="document.querySelector('.show-window').innerHTML+= this.value">7</button>
+                <button class="btn" value="+" onclick="operatorClicked(this.value)">+</button>
+                <button class="btn" value="6"
+                    onclick="document.querySelector('.show-window').innerHTML+= this.value">6</button>
+                <button class="btn" value="5"
+                    onclick="document.querySelector('.show-window').innerHTML+= this.value">5</button>
+                <button class="btn" value="4"
+                    onclick="document.querySelector('.show-window').innerHTML+= this.value">4</button>
+                <button class="btn" value="-" onclick="operatorClicked(this.value)">-</button>
+                <button class="btn" value="3"
+                    onclick="document.querySelector('.show-window').innerHTML+= this.value">3</button>
+                <button class="btn" value="2"
+                    onclick="document.querySelector('.show-window').innerHTML+= this.value">2</button>
+                <button class="btn" value="1"
+                    onclick="document.querySelector('.show-window').innerHTML+= this.value">1</button>
+                <button class="btn" value="X" onclick="operatorClicked(this.value)">X</button>
+                <button class="btn" value="0"
+                    onclick="document.querySelector('.show-window').innerHTML+= this.value">0</button>
+                <button class="btn btnD" value="."
+                    onclick="decimalPointClicked()">.</button>
+                <button class="btn" value="=" onclick="calculate()">=</button>
+                <button class="btn" value="/" onclick="operatorClicked(this.value)">/</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>

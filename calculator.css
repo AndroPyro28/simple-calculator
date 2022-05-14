@@ -1,0 +1,58 @@
+body{
+  background:linear-gradient(to right, cyan, rgb(61, 238, 61));
+  color: black;
+  font-weight: 1000;
+  font-family: cursive;
+}
+.calculator-content{
+  background:linear-gradient(to left ,rgb(3, 80, 80), rgb(61, 238, 61));
+  border-radius: 20px;
+  border: solid 2px black;
+  padding: 50px;
+}
+
+.calculator-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+.calculator-container .show-window{
+  display: block;
+  height: 50px;
+  overflow: auto;
+  width: 300px;
+  border-radius: 20px;
+  font-size: 25px;
+  text-align: center;
+  border: solid 2px black;
+}
+.calculator-buttons{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 300px;
+}
+.btn{
+  margin-top: 10px;
+  height: 40px;
+  width: 70px;
+  background:linear-gradient(to right, black, rgb(2, 114, 62));
+  color: white;
+  font-weight: 1000;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.C{
+  width: 150px;
+}
+.AC{
+  width: 150px;
+}
+.temp{
+  float: right;
+  margin-right: 20px;
+}
+.operator{
+  float: right;
+  margin-right: 20px;
+}
